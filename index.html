@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="header">
+    <h1> Employee Manager</h1>
+  </section>
+
+  <div class="sidenav">
+    <a href="#" onclick="interpret('print')" id="print">Print</a>
+    <!-- <a href="#" onclick="printList()">Print</a> -->
+    <a href="#" onclick="interpret('verify')" id="verify">Verify</a>
+    <!-- <a href="#" onclick="verifyCommand()">Verify</a> -->
+    <a href="#" onclick="interpret('lookup')" id="lookup">Lookup</a>
+    <!-- <a href="#" onclick="lookupCommand()">Lookup</a> -->
+    <a href="#" onclick="interpret('contains')" id="contains">Contains</a>
+    <!-- <a href="#" onclick="contains()">Contains</a> -->
+    <a href="#" onclick="interpret('update')" id="update">Update</a>
+    <!-- <a href="#" onclick="updateCommand()">Update</a> -->
+    <a href="#" onclick="interpret('add')" id="addEmployee">Add</a>
+    <!-- <a href="#" onclick="addEmployee()">Add</a> -->
+    <a href="#" onclick="interpret('delete')" id="removeEmployee">Delete</a>
+    <!-- <a href="#" onclick="deleteEmployee()">Delete</a> -->
+    <a href="#" onclick="interpret('phone')" id="phoneLookup">Phone</a>
+    <!-- <a href="#" onclick="phoneLookup()">Phone Lookup</a> -->
+  </div>
+
+  <!-- <div class="container">
+    <h2 class="title">Verify</h2>
+    <input type="Verify" id="verifyInput">
+  </div> -->
+
+  <!-- <form>
+    <input id="print" />
+    <button id="submit">Search</button>
+  </form> -->
+
+  <div id="content">
+    <br>
+    <form><br><input id="input"><input id="button" type="submit" value="button" onclick="verify()"></form>
+
+    <div id="outputArea"></div>
+    <!-- <div id="list"></div> -->
+    <script src="render.js"></script>
+    <script src="dom.js"></script>
+    <script src="app.js"></script>
+  </div>
+</body>
+
+</html>
